@@ -69,33 +69,43 @@
                 </svg>
                 </button>
                 <form>
-                    <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
-                    <div class="form-modal">
-                        <label for="name" class="label-modal label-modal-margin">Имя</label>
-                        <input type="text" name="name" id="name" />
-                        <svg class="name-icon" width="12" height="12">
-                            <use href="../images/icons.svg#icon-name-black"></use>
-                        </svg>
-                    </div>
-                    <div class="form-modal">
-                        <label for="tel-num" class="label-modal">Телефон</label>
-                        <input type="tel" name="tel-num" id="tel-num" class="tel-input" />
-                        <svg class="phone-icon" width="13" height="13">
-                            <use href="../images/icons.svg#icon-phone-black"></use>
-                        </svg>
-                    </div>
-                    <div class="form-modal">
-                        <label for="mailo" class="label-modal">Почта</label>
-                        <input type="email" name="mail" id="mailo" class="mail-input" />
-                        <svg class="mail-icon" width="15" height="12">
-                            <use href="../images/icons.svg#icon-email-black"></use>
-                        </svg>
+                        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+                        <div class="form-modal" role="group">
+                                <label for="name" class="label-modal"><span class="label">Имя</span>
+                                    <span class="name-span">
+                                        <input type="text" name="name" id="name" required />
+                                    <svg class="name-icon" width="12" height="12">
+                                            <use href="../images/icons.svg#icon-name-black"></use>
+                                        </svg>
+                                    </span>
+                                </label>
                         </div>
-                    <div class="form-modal">
-                        <label for="coment" class="label-modal">Комментарий</label>
+                        <div class="form-modal" role="group">
+                                <label for="tel-num" class="label-modal"><span class="label">Телефон</span>
+                                    <span class="phone-span">
+                                        <input type="tel" name="tel-num" id="tel-num" class="tel-input" />
+                                        <svg class="phone-icon" width="13" height="13">
+                                            <use href="../images/icons.svg#icon-phone-black"></use>
+                                        </svg>
+                                    </span>
+                                </label>
+                        </div>
+                        <div class="form-modal" role="group">
+                            <label for="mailo" class="label-modal"><span class="label">Почта</span>
+                                <span class="mail-span">
+                                    <input type="email" name="mail" id="mailo" class="mail-input" />
+                                    <svg class="mail-icon" width="15" height="12">
+                                        <use href="../images/icons.svg#icon-email-black"></use>
+                                    </svg>
+                                </span>
+                            </label>
+                            
+                        </div>
+                    <div class="form-modal" role="group"> 
+                        <label for="coment" class="label-modal label-textarea">Комментарий</label>
                         <textarea name="feedback" id="coment" placeholder="Введите текст"></textarea>
                     </div>
-                    <div class="form-modal form-checkbox">
+                    <div class="form-modal form-checkbox" role="group">
                         <input type="checkbox" name="policy" id="policy" />
                         <label for="policy" class="label-checkbox">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link link">Условия договора</a></label>
                     </div>
