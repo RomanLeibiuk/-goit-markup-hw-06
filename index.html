@@ -106,8 +106,14 @@
                         <textarea name="feedback" id="coment" placeholder="Введите текст"></textarea>
                     </div>
                     <div class="form-modal form-checkbox" role="group">
-                        <input type="checkbox" name="policy" id="policy" />
-                        <label for="policy" class="label-checkbox">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link link">Условия договора</a></label>
+                        
+                        <label class="label-checkbox">
+                            <input type="checkbox" name="policy" class="checkbox-input"/>              
+                            <span class="checkbox-icon"></span>
+                            <span>Соглашаюсь с рассылкой и принимаю
+                            <a href="" class="policy-link link">Условия договора</a></span>
+                                                      
+                        </label>
                     </div>
                     <button type="submit" class="submit-button modal-button">Отправить</button>
             </form>
@@ -448,20 +454,21 @@
                     </div>
                   
                         <form class="footer-form">
-                            <label for="mail" class=" footer-label">
-                                Подпишитесь на рассылку
-                            </label>
-                    <div class="footer-form-position">
+                        <label for="mail" class=" footer-label">
+                            Подпишитесь на рассылку
+                        </label>
+                        <div class="footer-form-position">
                             <input type="email" name="mail" id="mail" placeholder="E-mail" />
                             <button type="submit" class="submit-button">Подписаться
                                 <svg class="icon-send" width="24px" height="24px">
                                     <use href="./images/icons.svg#icon-icon-send"></use>
                                 </svg>
                             </button>
-                      
-                      </div>
+                            </div>
+                            </form>                          
+                        </div>
                    
-        </div>
+        
     
     </footer>
             
