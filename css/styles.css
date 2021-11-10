@@ -261,6 +261,7 @@ body {
 }
 .modal {
   position: absolute;
+  padding: 40px;
   min-width: 521px;
   min-height: 581px;
   top: 50%;
@@ -274,12 +275,12 @@ body {
   z-index: 4;
 }
 .close-button {
-  margin-left: auto;
+  position: absolute;
+  right: 8px;
+  top: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8px;
-  margin-right: 8px;
   height: 30px;
   width: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -296,8 +297,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 .form-modal input[type='text'] {
   padding-left: 42px;
@@ -358,8 +357,6 @@ body {
   left: 15px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 4;
-  fill: var(--title-text-color);
 }
 .phone-span {
   position: relative;
@@ -372,8 +369,6 @@ body {
   left: 15px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--title-text-color);
-  z-index: 5;
 }
 .mail-span {
   position: relative;
@@ -386,16 +381,14 @@ body {
   left: 15px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 6;
-  fill: var(--title-text-color);
 }
 .label {
   display: block;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
 }
 .label-modal {
   display: inline-block;
-  margin-top: 10px;
+  margin-bottom: 4px;
   text-align: left;
   font-size: 12px;
   line-height: 1.16;
@@ -404,7 +397,6 @@ body {
 }
 .label-textarea {
   display: block;
-  margin-bottom: 4px;
 }
 .modal-title {
   font-weight: 700;
@@ -478,6 +470,9 @@ input[type='checkbox']:checked + .checkbox-icon {
   background-size: contain;
   background-origin: border-box;
 }
+input[type='checkbox']:focus + .checkbox-icon {
+  border: 2px solid var(--accent-color);
+}
 .modal .modal-button {
   margin-right: auto;
   margin-left: auto;
@@ -485,6 +480,13 @@ input[type='checkbox']:checked + .checkbox-icon {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+}
+.input-first {
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.input-third {
+  margin: 10px 0px;
 }
 
 /* ==================Стилизация features ===============*/
